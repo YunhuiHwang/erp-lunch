@@ -1,0 +1,102 @@
+﻿python : Neither CUD
+A nor MPS are availa
+ble - defaulting to 
+CPU. Note: This modu
+le is much faster wi
+th a GPU.
+위치 줄:1 문자:1
++ python menu_scrape
+r.py > preview_v8.tx
+t 2>&1
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (Neit   
+ her CUDA no...t    
+er with a GPU.:    S
+tring) [], Rem    ot
+eException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+C:\Users\dinoj\anaco
+nda3\Lib\site-packag
+es\torch\utils\data\
+dataloader.py:668: U
+serWarning: 'pin_mem
+ory' argument is set
+ as true but no acce
+lerator is found, th
+en device pinned mem
+ory won't be used.
+  warnings.warn(warn
+_msg)
+Starting GTP Menu Scraper...
+WARNING: TEAMS_WEBHOOK_URL is not set.
+Looking for menu covering: 2026-01-09
+Checking post '주간식단표(1.12.~1.16.)' (2026-01-12 ~ 2026-01-16)
+Checking post '주간식단표(1.5.~1.9.)' (2026-01-05 ~ 2026-01-09)
+-> Found matching post!
+Selected menu post URL: https://www.gtp.or.kr/web/bbs/pdsView.jsp?gubun=weekMenu&cPage=1&no=260166
+Menu image URL: https://www.gtp.or.kr/web/common/download.jsp?f1=gtp260102_EocI.jpg&f2=pds&f3=
+Image downloaded to menu_temp.jpg
+Preprocessing image for better OCR...
+Processed image saved to menu_processed.jpg
+Initializing EasyOCR (this may take a moment)...
+Running OCR...
+Looking for date: 2026-01-09
+Found today's date: 2026-01-09
+Parsing Items. X-Range: 2047.6 - 2220.4
+Y-Boundaries: A_Top=280.0, B_Top=609.0, S_Bar=881.0, TakeOut=1424.0
+[DEBUG] All items in column:
+  Y=211.0: 금 요 일
+  Y=265.0: 2026-01-09
+  Y=317.0: 순대볶음
+  Y=369.0: 동그랑평전
+  Y=415.0: 고구마채볶음
+  Y=455.0: 째임삼
+  Y=495.0: 흑미밥& 백미밥
+  Y=537.0: 북어국
+  Y=576.0: 배추김치&각두기
+  Y=621.0: 울면
+  Y=675.0: 깐풍기
+  Y=719.0: 꽃빵튀김
+  Y=760.0: 단무지
+  Y=799.0: 백미밥
+  Y=839.0: 배추
+  Y=880.0: 호박죽
+  Y=922.0: 현미밥
+  Y=961.0: 복분자차
+  Y=1002.0: 숨눕
+  Y=1045.0: 돈육바베규쪽참
+  Y=1098.0: 갈리파스타
+  Y=1143.0: 후리가켓밥
+  Y=1182.0: 피름&활라피노
+  Y=1223.0: 우동국물
+  Y=1263.0: 배추김치
+  Y=1305.0: 그런설러드
+  Y=1346.0: 식혜
+  Y=1385.0: 리코타치즈설러드
+  Y=1425.0: 두부면물고기포레
+
+--- Generated Message Preview ---
+### 2026-01-09 오늘의 점심 메뉴
+
+| Corner A | Corner B |
+| :--- | :--- |
+| 순대볶음 | 울면 |
+| 동그랑땡전 | 깐풍기 |
+| 고구마채볶음 | 꽃빵튀김 |
+| 깻잎쌈 | 단무지 |
+| 흑미밥& 백미밥 | 백미밥 |
+| 북어국 | 배추 |
+| 배추김치&깍두기 |  |
+
+### Take Out
+- 두부면불고기포케
+
+---------------------------------
+

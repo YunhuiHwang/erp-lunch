@@ -1,0 +1,82 @@
+﻿python : Neither CUD
+A nor MPS are availa
+ble - defaulting to 
+CPU. Note: This modu
+le is much faster wi
+th a GPU.
+위치 줄:1 문자:1
++ python menu_scrape
+r.py > preview_outpu
+t_v2.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (Neit   
+ her CUDA no...t    
+er with a GPU.:    S
+tring) [], Rem    ot
+eException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+C:\Users\dinoj\anaco
+nda3\Lib\site-packag
+es\torch\utils\data\
+dataloader.py:668: U
+serWarning: 'pin_mem
+ory' argument is set
+ as true but no acce
+lerator is found, th
+en device pinned mem
+ory won't be used.
+  warnings.warn(warn
+_msg)
+Starting GTP Menu Scraper...
+WARNING: TEAMS_WEBHOOK_URL is not set. The script will run but cannot send the message.
+Please set the environment variable or edit the script with your Webhook URL.
+Looking for menu covering: 2026-01-09
+Checking post '주간식단표(1.12.~1.16.)' (2026-01-12 ~ 2026-01-16)
+Checking post '주간식단표(1.5.~1.9.)' (2026-01-05 ~ 2026-01-09)
+-> Found matching post!
+Selected menu post URL: https://www.gtp.or.kr/web/bbs/pdsView.jsp?gubun=weekMenu&cPage=1&no=260166
+Menu image URL: https://www.gtp.or.kr/web/common/download.jsp?f1=gtp260102_EocI.jpg&f2=pds&f3=
+Image downloaded to menu_temp.jpg
+Initializing EasyOCR (this may take a moment)...
+Running OCR...
+Looking for date: 2026-01-09
+Found today's date: 2026-01-09
+Parsing Items. X-Range: 1023.8 - 1110.2
+Y-Anchors: A=205.0, B=347.0, TakeOut=711.0
+
+--- Generated Message Preview ---
+### 2026-01-09 오늘의 점심 메뉴
+
+| Corner A | Corner B |
+| :--- | :--- |
+| 고구마채볶음 | 꽂빵튀김 |
+| 껏임심 | 단무지 |
+| 흑미밥&백미밥 | 백미밥 |
+| 북어국 | 배추 |
+| 배추김치&각두기 | 호박죽 |
+| 울면 | 현미밥 |
+| 깐풍기 | 복분자차 |
+|  | 숨눕 |
+|  | 돈육바베규쪽잡 |
+|  | 갈리파스타 |
+|  | 후리가게밥 |
+|  | 피출&활라피뇨 |
+|  | 우동국물 |
+|  | 배추김치 |
+|  | 그런설러드 |
+|  | 식혜 |
+|  | 리코다치즈설러드 |
+
+### Take Out
+- 두부면물고기포레
+
+---------------------------------
+
+Skipping Teams send (No URL).

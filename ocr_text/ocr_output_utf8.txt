@@ -1,0 +1,200 @@
+﻿python : Neither CUD
+A nor MPS are availa
+ble - defaulting to 
+CPU. Note: This modu
+le is much faster wi
+th a GPU.
+위치 줄:1 문자:1
++ python menu_scrape
+r.py > ocr_output.tx
+t 2>&1
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (Neit   
+ her CUDA no...t    
+er with a GPU.:    S
+tring) [], Rem    ot
+eException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+C:\Users\dinoj\anaco
+nda3\Lib\site-packag
+es\torch\utils\data\
+dataloader.py:668: U
+serWarning: 'pin_mem
+ory' argument is set
+ as true but no acce
+lerator is found, th
+en device pinned mem
+ory won't be used.
+  warnings.warn(warn
+_msg)
+Starting GTP Menu Scraper...
+Latest menu post URL: https://www.gtp.or.kr/web/bbs/pdsView.jsp?gubun=weekMenu&cPage=1&no=260176
+Menu image URL: https://www.gtp.or.kr/web/common/download.jsp?f1=gtp260108_R9kP.png&f2=pds&f3=
+Detected: (주)템리어프어스 (prob: 0.16)
+Detected: 경기밥크노파크 주간 메뉴 (prob: 0.52)
+Detected: -하단 머뉴는 시장상청데 따리 번경 (prob: 0.10)
+Detected: 수 씩스니다 (prob: 0.17)
+Detected: 월 요 일 (prob: 0.33)
+Detected: 화 요 일 (prob: 0.75)
+Detected: 수요 일 (prob: 0.74)
+Detected: 목요 일 (prob: 0.52)
+Detected: 금요 일 (prob: 1.00)
+Detected: 2026-01-12 (prob: 0.56)
+Detected: 2026-01-13 (prob: 0.98)
+Detected: 2026-01-14 (prob: 0.99)
+Detected: 2026-01-15 (prob: 0.78)
+Detected: 2026-01-16 (prob: 0.90)
+Detected: 오징어콩나물- (prob: 0.57)
+Detected: 로제워닭 (prob: 0.14)
+Detected: 아비고카러뒷밥 (prob: 0.31)
+Detected: 돈사태짐 (prob: 0.45)
+Detected: 바지락미나리습밥 (prob: 0.83)
+Detected: 떡국떡후랑크볶음 (prob: 0.43)
+Detected: 봉어묵뒤김 (prob: 0.28)
+Detected: 갈렉닭강정 (prob: 0.45)
+Detected: 열무김치지짐 (prob: 0.86)
+Detected: 두부두루치기 (prob: 0.78)
+Detected: Corncr (prob: 0.71)
+Detected: 곰피삼임초장 (prob: 0.26)
+Detected: 굳설러드 (prob: 0.15)
+Detected: 그런반스맛살 볶음 (prob: 0.59)
+Detected: 천사채설러드 (prob: 0.55)
+Detected: 시래기무조림 (prob: 0.97)
+Detected: 궁채절임 (prob: 0.85)
+Detected: 수제야채피글 (prob: 0.89)
+Detected: 산고추지&락교 (prob: 0.33)
+Detected: 미역오이초무침 (prob: 0.99)
+Detected: 도시락김 (prob: 0.86)
+Detected: 배추된장국 (prob: 0.95)
+Detected: 굉이계란국 (prob: 0.47)
+Detected: 미소국 (prob: 0.60)
+Detected: 깜빛국 (prob: 0.32)
+Detected: 고추지 (prob: 1.00)
+Detected: 녹미밥& 백미밥 (prob: 0.70)
+Detected: 김가루밥 (prob: 0.47)
+Detected: 백미밥 (prob: 0.98)
+Detected: 녹미밥용 백미밥 (prob: 0.12)
+Detected: 애호박찌개 (prob: 0.95)
+Detected: 배추김치요각두기 (prob: 0.16)
+Detected: 배추김치요꽉두기 (prob: 0.05)
+Detected: 배추김치요각두기 (prob: 0.36)
+Detected: 배추김치요각두기 (prob: 0.39)
+Detected: 배추김치요각두기 (prob: 0.33)
+Detected: 참치마요뒷밥 (prob: 0.48)
+Detected: 순두부짜글이 (prob: 0.29)
+Detected: 순살감자당 (prob: 0.59)
+Detected: 짜장면 (prob: 0.99)
+Detected: 청양크림함박스테이크 (prob: 0.96)
+Detected: 프렌치토스트 (prob: 0.96)
+Detected: 돈채숙주볶음 (prob: 0.67)
+Detected: 고기손만두- (prob: 0.63)
+Detected: 유린미니까스 (prob: 0.70)
+Detected: 웨지감자튀김 (prob: 0.68)
+Detected: Corner (prob: 1.00)
+Detected: 토마로미므붙조림 (prob: 0.37)
+Detected: 비범당면 (prob: 0.32)
+Detected: 명업채 볶음 (prob: 0.67)
+Detected: 단무지&양파 (prob: 0.69)
+Detected: 토마토팬네파스타 (prob: 0.24)
+Detected: 단무지 (prob: 1.00)
+Detected: 된장근대생채 (prob: 0.95)
+Detected: 양파초절임 (prob: 0.77)
+Detected: 깜빵국 (prob: 0.27)
+Detected: 우동국물 (prob: 1.00)
+Detected: 배추된장국 (prob: 0.70)
+Detected: 즉미밥& 백미밥 (prob: 0.33)
+Detected: 흑미밥& 백미밥 (prob: 0.20)
+Detected: 백미밥 (prob: 1.00)
+Detected: 후리가켓밥 (prob: 0.62)
+Detected: 배추김치엇각두기 (prob: 0.05)
+Detected: 배추김치요꽉두기 (prob: 0.05)
+Detected: 배추김치w각두기 (prob: 0.07)
+Detected: 배추김치요각두기 (prob: 0.39)
+Detected: 배추김치&꽉두기 (prob: 0.73)
+Detected: 수제나박김치 (prob: 0.90)
+Detected: 새우집인건빵 (prob: 0.33)
+Detected: 그런생런드 (prob: 0.56)
+Detected: 동치미 (prob: 0.77)
+Detected: 그런설런드 (prob: 0.51)
+Detected: 러드바 (prob: 1.00)
+Detected: 현미밥 (prob: 1.00)
+Detected: 현미밥 (prob: 1.00)
+Detected: 현미밥 (prob: 1.00)
+Detected: 현미밥 (prob: 1.00)
+Detected: 현미밥 (prob: 1.00)
+Detected: 대추차 (prob: 0.96)
+Detected: 분로메리쏘초 (prob: 0.03)
+Detected: 유자차 (prob: 1.00)
+Detected: 부분자차 (prob: 0.88)
+Detected: 녹차 (prob: 0.81)
+Detected: 음 료 (prob: 0.42)
+Detected: 숨눕 (prob: 0.35)
+Detected: 숨눕 (prob: 0.40)
+Detected: 숨눕 (prob: 0.08)
+Detected: 숨눕 (prob: 0.08)
+Detected: 숨눕 (prob: 0.42)
+Detected: 잔치국수 (prob: 1.00)
+Detected: 설렁당 (prob: 0.74)
+Detected: 추억의 도시락 (prob: 0.87)
+Detected: 콩나물해장국 (prob: 1.00)
+Detected: 나시고램볶음밥 (prob: 0.32)
+Detected: 밥버거 (prob: 0.98)
+Detected: 너비아니육전 (prob: 0.73)
+Detected: 해물까스 (prob: 0.98)
+Detected: 녹두반대떡 (prob: 0.94)
+Detected: 비닐활국수 (prob: 0.16)
+Detected: 일반식 (prob: 1.00)
+Detected: 메주리알버섯조림 (prob: 0.57)
+Detected: 병아리공조림 (prob: 0.76)
+Detected: 감글설러드 (prob: 0.53)
+Detected: 도로리묵야채무침 (prob: 0.74)
+Detected: 순권뒤김 (prob: 0.82)
+Detected: 품레인요플레 (prob: 0.39)
+Detected: 배추붙적이 (prob: 0.33)
+Detected: 우엉조림 (prob: 0.52)
+Detected: 고추잎무침 (prob: 0.94)
+Detected: 양배추피글 (prob: 0.48)
+Detected: 백미밥 (prob: 0.98)
+Detected: 유채고추장국 (prob: 0.99)
+Detected: 백미밥 (prob: 1.00)
+Detected: 쌀국수국물 (prob: 0.96)
+Detected: 배추김치 (prob: 0.90)
+Detected: 꽉두기 (prob: 0.62)
+Detected: 배추김치 (prob: 0.42)
+Detected: 배추김치 (prob: 0.94)
+Detected: 배추김치 (prob: 0.97)
+Detected: 샌러드바 (prob: 0.48)
+Detected: 그런설런드 (prob: 0.84)
+Detected: 야채스틱 (prob: 0.69)
+Detected: 요구르트 (prob: 0.94)
+Detected: 야채스틱 (prob: 0.99)
+Detected: 그런설런드 (prob: 0.40)
+Detected: 음료 (prob: 0.92)
+Detected: 대추차 (prob: 0.96)
+Detected: 분로메리쏘초 (prob: 0.03)
+Detected: 유자차 (prob: 1.00)
+Detected: 부분자차 (prob: 0.71)
+Detected: 녹차 (prob: 0.81)
+Detected: 유부초밥압러드 (prob: 0.16)
+Detected: 리코타치즈쓸러드 (prob: 0.27)
+Detected: 꽃맛살단호박생러드 (prob: 0.43)
+Detected: 급설러드 (prob: 0.34)
+Detected: 치권까스설러드 (prob: 0.58)
+Detected: Take Out (prob: 0.70)
+Detected: 두부 테터포키 (prob: 0.13)
+Detected: 치권테터포귀 (prob: 0.06)
+Detected: 훈제오리포레 (prob: 0.60)
+Detected: 베이컨아보카도포레 (prob: 0.86)
+Detected: 두부면물고기포키 (prob: 0.52)
+Detected: 썰러드SET/ 포레SET (prob: 0.57)
+Detected: 샌드위치SET (prob: 1.00)
+Detected: 요거트SET / 슬림픽 SET (prob: 0.86)
+Detected: 선식SET (prob: 1.00)
+Please set TEAMS_WEBHOOK_URL to actually send messages.
