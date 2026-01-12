@@ -148,14 +148,14 @@ def preprocess_image(image_path):
         
         # Simple thresholding/denoising can sometimes help, but sometimes hurt.
         # Let's stick with just upscaling and grayscale which is usually safer for EasyOCR.
-        # Optional: Sharpening
-        kernel = np.array([[0, -1, 0],
-                           [-1, 5,-1],
-                           [0, -1, 0]])
-        sharpened = cv2.filter2D(gray, -1, kernel)
+        # This helps separate text from background
+        # Tuned parameters: 11, 2 (Standard)
+        binary = cv2.adaptiveThreshold(
+            gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2
+        )
         
         new_filename = os.path.join(OUTPUT_DIR, 'menu_processed.jpg')
-        cv2.imwrite(new_filename, sharpened)
+        cv2.imwrite(new_filename, binary)
         print(f"Processed image saved to {new_filename}")
         return new_filename
     except Exception as e:
@@ -225,6 +225,11 @@ def parse_menu_with_ocr_and_get_data(image_path):
     reader = easyocr.Reader(['ko', 'en']) 
     print("Running OCR...")
     ocr_result = reader.readtext(processed_path)
+    
+    print("Debug: First 10 generated text items:")
+    for i, (bbox, text, prob) in enumerate(ocr_result[:10]):
+        print(f"[{i}] {text} (prob: {prob:.2f})")
+    print("End of Debug info")
     
     today = datetime.date.today()
     today_match_str = today.strftime("%Y-%m-%d")
