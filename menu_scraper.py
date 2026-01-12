@@ -12,6 +12,8 @@ import re
 import sys
 import cv2
 
+OUTPUT_DIR = 'ocr_text'
+
 # Configuration
 # Users should set this environment variable or edit the string below
 TEAMS_WEBHOOK_URL = os.environ.get('TEAMS_WEBHOOK_URL', '') 
@@ -113,7 +115,11 @@ def download_image(image_url):
         headers = {'User-Agent': 'Mozilla/5.0'}
         response = requests.get(image_url, stream=True, headers=headers)
         response.raise_for_status()
-        filename = 'menu_temp.jpg'
+        
+        if not os.path.exists(OUTPUT_DIR):
+            os.makedirs(OUTPUT_DIR)
+            
+        filename = os.path.join(OUTPUT_DIR, 'menu_temp.jpg')
         with open(filename, 'wb') as f:
             for chunk in response.iter_content(1024):
                 f.write(chunk)
@@ -148,7 +154,7 @@ def preprocess_image(image_path):
                            [0, -1, 0]])
         sharpened = cv2.filter2D(gray, -1, kernel)
         
-        new_filename = 'menu_processed.jpg'
+        new_filename = os.path.join(OUTPUT_DIR, 'menu_processed.jpg')
         cv2.imwrite(new_filename, sharpened)
         print(f"Processed image saved to {new_filename}")
         return new_filename
@@ -257,6 +263,10 @@ def parse_menu_with_ocr_and_get_data(image_path):
         print("Today's menu not found in the image headers.")
         return None
 
+    # Define search bounds based on the date header
+    search_x_min = today_x_min - 100
+    search_x_max = today_x_max + 100
+    
     corners = []
     
     for (bbox, text, prob) in ocr_result:
@@ -398,6 +408,12 @@ def main():
     print("\n--- Generated Message Preview ---")
     print(final_text)
     print("---------------------------------\n")
+    
+    # Save preview to file
+    preview_filename = os.path.join(OUTPUT_DIR, "menu_preview.txt")
+    with open(preview_filename, "w", encoding="utf-8") as f:
+        f.write(final_text)
+    print(f"Preview text saved to {preview_filename}")
     
     if TEAMS_WEBHOOK_URL:
         # Safety check: Ask for user confirmation before sending
