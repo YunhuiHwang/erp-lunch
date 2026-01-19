@@ -1,6 +1,6 @@
-requests==2.31.0
-beautifulsoup4==4.12.3
-easyocr==1.7.1
-opencv-python-headless==4.9.0.80
-numpy==1.26.4
-pymsteams==0.2.2
+requests
+beautifulsoup4
+easyocr
+opencv-python-headless
+numpy
+pymsteams
